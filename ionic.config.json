@@ -1,0 +1,7 @@
+{
+  "name": "musicClone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
