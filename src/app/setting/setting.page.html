@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Setting</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    <ion-radio-group value="{{findTheme}}" (ionChange)="findColor($event)">
+      <ion-list-header>
+        <ion-icon slot="start" name="moon"></ion-icon>
+        <ion-label>Select Theme</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Dark Theme</ion-label>
+        <ion-radio slot="start" value="darkTheme"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Light Theme</ion-label>
+        <ion-radio slot="start" value="lightTheme"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+</ion-content>

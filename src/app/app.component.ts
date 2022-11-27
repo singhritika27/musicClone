@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  theme: any;
+
+  constructor() {
+    this.theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+    console.log(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    localStorage.setItem('themeDetection',this.theme)
+  }
 }
